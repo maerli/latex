@@ -1,0 +1,129 @@
+\documentclass[a4paper,10pt]{article}
+\usepackage{pslatex}
+\usepackage[utf8]{inputenc}
+\usepackage{multicol}
+\usepackage{multirow}
+\usepackage{graphicx}
+\usepackage[table]{xcolor}
+\usepackage[left=2cm,top=2cm,right=2cm,bottom=2cm]{geometry}
+\usepackage[brazil]{babel}
+
+%+---------------------------------------------+
+%|  template criado por @maerli.pereira        |
+%|  09 de março de 2018                        |
+%|  base do template criado por Paulo Santiago |
+%+---------------------------------------------+
+
+%nome do curso
+\newcommand{\curso}{Licenciatura em Física}
+
+%nome da disciplina
+\newcommand{\disciplina}{Eletricidade e Magnetismo I – 2017/2}
+
+%nome do professor
+\newcommand{\professor}{Prof. Maerli Pereira}
+
+%nome da instituição
+\newcommand{\instituicao}{Instituto Federal de Educação, Ciência e Tecnologia do Ceará – Campus Acaraú}
+
+%etapa
+\newcommand{\etapa}{N1}
+
+%prova
+\newcommand{\prova}{1}
+
+%configuração
+%criar comando \quest para formatação dos itens
+\usepackage{calc}
+\usepackage{ifthen}
+\newcounter{mine}
+\setcounter{mine}{1}
+\newcommand{\quest}{\ifthenelse{ \equal{\themine}{1} }{
+}{
+  \vspace{0.5cm}
+}  \noindent \textbf{\themine. } \setcounter{mine}{\themine + 1}}
+%fim configuração
+
+\pagestyle{empty}% sem paginação
+
+\begin{document}
+%\includegraphics[width=4cm,height=3cm]{c}
+\begin{table}
+   \hspace{-0.4cm}
+   \begin{tabular}{ll}
+        \multirow{4}{*}{ \includegraphics[width=1.4cm,height=1.61cm]{img/if.png}} 
+        &\instituicao\\
+        &\noindent\curso\\
+        &\disciplina  - \professor\\
+        & Prova \prova, Etapa \etapa \\
+    \end{tabular}
+\end{table}
+
+\vspace{0.3cm}
+\hspace{-0.5cm}\fbox{Aluno(a):\hspace{11cm} Data:\hspace{3.5cm}}
+
+\begin{multicols*}{2} 
+    \setlength{\columnseprule}{0.2pt}
+    \setlength{\columnsep}{2cm}
+    
+    \quest Duas esferas muito pequenas, de 8,55 g, estão a uma distância de 15,0 cm de um centro a outro e são carregadas adicionando-se um número igual de elétrons a cada uma delas. Desconsiderando-se todas as demais forças, quantos elétrons teriam que ser adicionados a cada esfera para que ambas acelerem a 25,0g quando forem libertadas? Para que lado elas vão acelerar? [2,0 pontos]
+    
+    \quest Um elétron é projetado com velocidade inicial $v_0=1,60×10^6$  m/s para dentro do campo elétrico uniforme entre placas paralelas indicadas na Figura 21.38. Suponha que o campo seja uniforme e orientado verticalmente para baixo e considere igual a zero o campo elétrico fora das placas. O elétron entra no campo em um ponto intermediário entre as placas. \textbf{(a)} Sabendo que o elétron tangencia a placa superior quando ele sai do campo, calcule o módulo do campo elétrico. \textbf{(b)} Suponha que na Figura 21.38 o elétron seja substituído por um próton com a mesma velocidade $v_0$. O próton colide com uma das placas? Se o próton não colide com nenhuma placa, qual deve ser o módulo, a direção e o sentido do seu deslocamento vertical quando ele sai da região entre as placas? \textbf{(c)} Compare as trajetórias seguidas pelo elétron e pelo próton e explique as diferenças. \textbf{(d)} Analise se é razoável desprezar os efeitos da gravidade para cada partícula. [1,0 ponto cada item]
+    	
+    \quest Uma carga puntiforme igual a +2,0 nC está na origem e uma segunda carga puntiforme igual a -5,0 nC encontra-se sobre o eixo Ox, no ponto x=0,800 m. (a) Determine o módulo, a direção e o sentido do campo elétrico nos seguintes pontos sobre o eixo Ox: (i) x=0,200 m; (ii) x=1,20 m; (iii) x=-0,200 m. (b) Calcule a força elétrica resultante que essas cargas exerceriam sobre um elétron situado em cada um dos pontos mencionados no item (a). [1,5 pontos cada item]
+    	
+    \quest A Figura 21.41 mostra algumas linhas de campo elétrico produzidas por três cargas puntiformes localizadas ao longo de um eixo vertical. Todas as três cargas possuem o mesmo módulo. (a) Quais são os sinais de cada uma das três cargas? Explique seu racio-cínio. (b) Em que ponto(s) o módulo do campo elétrico atinge seu valor mínimo? Explique como os campos produzidos pelas cargas individuais se combinam para fornecer o campo elétrico resultante nesse(s) ponto(s). [1,5 pontos cada item]
+    	
+    		
+    \quest Um elétron é projetado com velocidade inicial $v_0=1,60×10^6$  m/s para dentro do campo elétrico uniforme entre placas paralelas indicadas na Figura 21.38. Suponha que o campo seja uniforme e orientado verticalmente para baixo e considere igual a zero o campo elétrico fora das placas. O elétron entra no campo em um ponto intermediário entre as placas. (a) Sabendo que o elétron tangencia a placa superior quando ele sai do campo, calcule o módulo do campo elétrico. (b) Suponha que na Figura 21.38 o elétron seja substituído por um próton com a mesma velocidade $v_0$. O próton colide com uma das placas? Se o próton não colide com nenhuma placa, qual deve ser o módulo, a direção e o sentido do seu deslocamento vertical quando ele sai da região entre as placas? (c) Compare as trajetórias seguidas pelo elétron e pelo próton e explique as diferenças. (d) Analise se é razoável desprezar os efeitos da gravidade para cada partícula. [1,0 ponto cada item]
+    
+    \quest Um elétron é projetado com velocidade inicial $v_0=1,60×10^6$  m/s para dentro do campo elétrico uniforme entre placas paralelas indicadas na Figura 21.38. Suponha que o campo seja uniforme e orientado verticalmente para baixo e considere igual a zero o campo elétrico fora das placas. O elétron entra no campo em um ponto intermediário entre as placas. (a) Sabendo que o elétron tangencia a placa superior quando ele sai do campo, calcule o módulo do campo elétrico. (b) Suponha que na Figura 21.38 o elétron seja substituído por um próton com a mesma velocidade $v_0$. O próton colide com uma das placas? Se o próton não colide com nenhuma placa, qual deve ser o módulo, a direção e o sentido do seu deslocamento vertical quando ele sai da região entre as placas? (c) Compare as trajetórias seguidas pelo elétron e pelo próton e explique as diferenças. (d) Analise se é razoável desprezar os efeitos da gravidade para cada partícula. [1,0 ponto cada item]
+    
+    \quest Um elétron é projetado com velocidade inicial $v_0=1,60×10^6$  m/s para dentro do campo elétrico uniforme entre placas paralelas indicadas na Figura 21.38. Suponha que o campo seja uniforme e orientado verticalmente para baixo e considere igual a zero o campo elétrico fora das placas. O elétron entra no campo em um ponto intermediário entre as placas. (a) Sabendo que o elétron tangencia a placa superior quando ele sai do campo, calcule o módulo do campo elétrico. (b) Suponha que na Figura 21.38 o elétron seja substituído por um próton com a mesma velocidade $v_0$. O próton colide com uma das placas? Se o próton não colide com nenhuma placa, qual deve ser o módulo, a direção e o sentido do seu deslocamento vertical quando ele sai da região entre as placas? (c) Compare as trajetórias seguidas pelo elétron e pelo próton e explique as diferenças. (d) Analise se é razoável desprezar os efeitos da gravidade para cada partícula. [1,0 ponto cada item]
+    
+     \quest Um elétron é projetado com velocidade inicial $v_0=1,60×10^6$  m/s para dentro do campo elétrico uniforme entre placas paralelas indicadas na Figura 21.38. Suponha que o campo seja uniforme e orientado verticalmente para baixo e considere igual a zero o campo elétrico fora das placas. O elétron entra no campo em um ponto intermediário entre as placas. (a) Sabendo que o elétron tangencia a placa superior quando ele sai do campo, calcule o módulo do campo elétrico. (b) Suponha que na Figura 21.38 o elétron seja substituído por um próton com a mesma velocidade $v_0$. O próton colide com uma das placas? Se o próton não colide com nenhuma placa, qual deve ser o módulo, a direção e o sentido do seu deslocamento vertical quando ele sai da região entre as placas? (c) Compare as trajetórias seguidas pelo elétron e pelo próton e explique as diferenças. (d) Analise se é razoável desprezar os efeitos da gravidade para cada partícula. [1,0 ponto cada item]
+    
+    
+    \vspace{2cm}
+    
+    \scriptsize{
+    \noindent
+    \begin{tabular}{| m{3.9cm} p{3.5cm} |}
+         \hline
+        \multicolumn{2}{| {\centeringm{5cm}}|}{Dados úteis aos enunciados \cellcolor[gray]{0.5}} \\
+        \hline
+          Carga elementar & $e \approx 1,602 \times 10^{-19}  C$  \\
+          \hline
+          Massa do elétron & $m_e=9,11 \times 10^{-31}  kg$\\
+          \hline
+          Massa do próton & $m_p=1,67 \times 10^{-27}  kg$ \\
+          \hline
+          Constante eletrostática & $k \approx 8,988 \times 10^9  Nm^2/C^2$ \\
+          \hline
+          Aceleração da gravidade	& $g \approx 9,807 m/s^2$ \\
+          \hline
+          Intensidade da força elétrica (lei de Coulomb) entre cargas puntiformes &	$F_e=k\frac{|q_1 q_2| }{r^2}$ \\
+          \hline
+          Força e campo elétricos & $\vec{F_e} =q\vec{E}$ \\
+          \hline
+    \end{tabular}
+    \vspace{0.4cm}
+    
+     \noindent
+     \begin{tabular}{|p{7.8cm}|}
+        \hline
+        \cellcolor[gray]{0.8}
+        Observações: a pontuação total da prova chega a 12,0 pontos, enquanto a nota máxima é 10,0. Responda tudo o que puder, a pontuação que exceder a nota máxima será desconsiderada.
+        \\
+        \hline
+    \end{tabular}
+    }
+    \vspace{0.2cm}
+    \begin{center}
+        “Não existem métodos fáceis para resolver problemas difíceis” - René Descartes\\
+        \vspace{0.2cm}
+        \textit{Boa prova!}
+    \end{center}
+\end{multicols*}
+ 
+\end{document}
